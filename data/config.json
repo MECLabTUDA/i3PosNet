@@ -1,0 +1,5 @@
+{
+    'displacement': 2.5,
+    'angleStddev': 10.0,
+    'minResolution': 0.1
+}
