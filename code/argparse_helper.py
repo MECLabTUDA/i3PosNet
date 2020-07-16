@@ -56,7 +56,7 @@ def add_range_list_subparser(argument_parser):
         '--stop',
         type=int,
         help="The index of the last drr/xray to include in the dataset +1",
-        require=True
+        required=True
         )
 
     range_parser.add_argument(
@@ -77,8 +77,8 @@ def add_range_list_subparser(argument_parser):
     json_parser.set_defaults(mode='list')
     json_parser.add_argument('list',
         type=json.loads,
-        help='Load list of indices from a json-encoded list',
-        required=True)
+        help='Load list of indices from a json-encoded list'
+    )
 
 def add_instrument_options(argument_parser):
     mgroup = argument_parser.add_mutually_exclusive_group(required=True)
